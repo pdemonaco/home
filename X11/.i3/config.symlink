@@ -11,7 +11,7 @@
 
 set $mod Mod1
 set $psst --no-startup-id
-set $locker "i3lock -dut -I 240 -i /home/phil/dropbox/images/background/simon_stalenhag/flyby_1920.png"
+set $locker "i3lock -d -I 240 -i /home/phil/dropbox/images/background/simon_stalenhag/flyby_1920.png"
 set $dock_cmd ""
 
 # Startup Applications
@@ -20,7 +20,7 @@ exec $psst compton -b
 exec urxvtd --quiet --opendisplay --fork
 exec $psst nitrogen --restore
 exec $psst nm-applet &
-exec $psst xautolock -time 9 -locker $locker &
+exec $psst xautolock -time 60 -locker $locker &
 exec $psst shutter --min_at_startup
 exec $psst dropbox start
 exec $psst copyq
