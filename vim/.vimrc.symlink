@@ -52,14 +52,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Try out YCM bro
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_confirm_extra_conf = 0
-set omnifunc=syntaxcomplete#Complete
-
-" Generate a config file for YCM
-Plugin 'rdnetto/YCM-Generator'
-
 " Hopefully some nice markdown highlighting...
 Plugin 'gabrielelana/vim-markdown'
 
