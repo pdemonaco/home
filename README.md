@@ -8,6 +8,7 @@ A quick, somewhat elegant way to manage my configuration files.
     mkdir -p "${HOME}/repo/unix-home"
     cd "${HOME}/repo/unix-home"
     git clone git@github.com:pdemonaco/home.git .
+    git checkout --track origin/server-config
     ```
 2. Execute mklinks.
 
