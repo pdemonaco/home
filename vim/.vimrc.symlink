@@ -223,6 +223,9 @@ set smarttab
 set shiftwidth=8
 set tabstop=8
 
+" Unless we're editing yaml
+autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
+
 " Linebreak on 80 characters
 set lbr
 set tw=80
