@@ -72,6 +72,9 @@ Plugin 'momota/cisco.vim'
 " Static analysis and linter 
 Plugin 'vim-syntastic/syntastic'
 
+" Puppet Template Format 
+Plugin 'rudexi/vim-epp'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -223,8 +226,11 @@ set smarttab
 set shiftwidth=8
 set tabstop=8
 
-" Unless we're editing yaml
+" Unless we're editing yaml or puppet files
 autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype puppet setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2 expandtab
+autocmd Filetype epp setlocal tabstop=2 shiftwidth=2 expandtab
 
 " Linebreak on 80 characters
 set lbr
