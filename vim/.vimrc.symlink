@@ -223,8 +223,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 8 spaces - that's how it is
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=4
+set tabstop=4
 
 " Unless we're editing yaml or puppet files
 autocmd Filetype yaml setlocal tabstop=2 shiftwidth=2 expandtab
