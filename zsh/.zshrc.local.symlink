@@ -49,7 +49,7 @@ alias ll="ls -lrta"
 alias less="/usr/bin/less -R"
 
 # Add the local ruby bin path if it exists
-RUBY_DIR="${HOME}/.gem/ruby/2.3.0/bin/"
+RUBY_DIR="${HOME}/.gem/ruby/2.4.0/bin"
 if [ -d "${RUBY_DIR}" ]
 then
         export PATH=${PATH}:${RUBY_DIR}
